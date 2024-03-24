@@ -1,0 +1,494 @@
+2024-02-24 18:33:10 - INFO - Processing the forecasting for the patient 6         1.0
+0         1.0
+7         1.0
+1         1.0
+8         1.0
+        ...  
+5635    907.0
+5637    907.0
+5638    907.0
+5639    907.0
+5636    907.0
+Name: id, Length: 5640, dtype: float64
+2024-02-24 18:34:14 - INFO - Processing the forecasting for the patient 4.0
+2024-02-24 18:34:14 - INFO - Processing the forecasting for the patient 4.0
+2024-02-24 18:35:38 - INFO - Processing the forecasting for the patient 6.0
+2024-02-24 18:35:38 - INFO - Processing the forecasting for the patient 6.0
+2024-02-24 18:35:38 - INFO - Processing the forecasting for the patient 6.0
+2024-02-24 18:41:43 - INFO - Processing the forecasting for the patient 2.0
+2024-02-24 18:41:43 - INFO - Processing the forecasting for the patient 2.0
+2024-02-24 18:41:43 - INFO - Processing the forecasting for the patient 2.0
+2024-02-24 18:41:43 - INFO - Processing the forecasting for the patient 2.0
+2024-02-24 18:41:44 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-02-24 18:41:44 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-02-24 18:41:44 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-02-24 18:41:44 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-02-24 18:42:20 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 18:42:20 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 18:42:20 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 18:42:20 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 18:42:20 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 18:42:21 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 18:42:21 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 18:42:21 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 18:42:21 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 18:42:21 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 18:42:44 - INFO - This is an info message
+2024-02-24 18:42:44 - INFO - This is an info message
+2024-02-24 18:42:44 - INFO - This is an info message
+2024-02-24 18:42:44 - INFO - This is an info message
+2024-02-24 18:42:44 - INFO - This is an info message
+2024-02-24 18:42:44 - INFO - This is an info message
+2024-02-24 18:42:44 - WARNING - This is a warning message
+2024-02-24 18:42:44 - WARNING - This is a warning message
+2024-02-24 18:42:44 - WARNING - This is a warning message
+2024-02-24 18:42:44 - WARNING - This is a warning message
+2024-02-24 18:42:44 - WARNING - This is a warning message
+2024-02-24 18:42:44 - WARNING - This is a warning message
+2024-02-24 18:42:44 - ERROR - This is an error message
+2024-02-24 18:42:44 - ERROR - This is an error message
+2024-02-24 18:42:44 - ERROR - This is an error message
+2024-02-24 18:42:44 - ERROR - This is an error message
+2024-02-24 18:42:44 - ERROR - This is an error message
+2024-02-24 18:42:44 - ERROR - This is an error message
+2024-02-24 18:50:08 - INFO - This is an info message
+2024-02-24 18:50:08 - INFO - This is an info message
+2024-02-24 18:50:08 - INFO - This is an info message
+2024-02-24 18:50:08 - INFO - This is an info message
+2024-02-24 18:50:08 - INFO - This is an info message
+2024-02-24 18:50:08 - INFO - This is an info message
+2024-02-24 18:50:08 - INFO - This is an info message
+2024-02-24 18:50:08 - WARNING - This is a warning message
+2024-02-24 18:50:08 - WARNING - This is a warning message
+2024-02-24 18:50:08 - WARNING - This is a warning message
+2024-02-24 18:50:08 - WARNING - This is a warning message
+2024-02-24 18:50:08 - WARNING - This is a warning message
+2024-02-24 18:50:08 - WARNING - This is a warning message
+2024-02-24 18:50:08 - WARNING - This is a warning message
+2024-02-24 18:50:08 - ERROR - This is an error message
+2024-02-24 18:50:08 - ERROR - This is an error message
+2024-02-24 18:50:08 - ERROR - This is an error message
+2024-02-24 18:50:08 - ERROR - This is an error message
+2024-02-24 18:50:08 - ERROR - This is an error message
+2024-02-24 18:50:08 - ERROR - This is an error message
+2024-02-24 18:50:08 - ERROR - This is an error message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - INFO - This is an info message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - WARNING - This is a warning message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:22:38 - ERROR - This is an error message
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:16 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:25:17 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:28:22 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:28:22 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:37:22 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:37:22 - INFO - Processing the forecasting for the patient 1.0
+2024-02-24 21:37:22 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:37:22 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-02-24 21:37:37 - INFO - Processing the forecasting for the patient 20.0
+2024-02-24 21:37:37 - INFO - Processing the forecasting for the patient 20.0
+2024-02-24 21:37:37 - INFO - Processing the forecasting for the patient 20.0
+2024-02-24 21:37:38 - INFO - Forecasting for the patient 20.0 is sucessfull
+2024-02-24 21:37:38 - INFO - Forecasting for the patient 20.0 is sucessfull
+2024-02-24 21:37:38 - INFO - Forecasting for the patient 20.0 is sucessfull
+2024-03-02 18:42:03 - INFO - Processing the forecasting for the patient 1.0
+2024-03-02 18:42:04 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:26:37 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:26:38 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:30:03 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:30:03 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:30:04 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:30:04 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:35:42 - INFO - Processing the forecasting for the patient 13.0
+2024-03-04 14:35:42 - INFO - Processing the forecasting for the patient 13.0
+2024-03-04 14:35:42 - INFO - Processing the forecasting for the patient 13.0
+2024-03-04 14:35:44 - INFO - Forecasting for the patient 13.0 is sucessfull
+2024-03-04 14:35:44 - INFO - Forecasting for the patient 13.0 is sucessfull
+2024-03-04 14:35:44 - INFO - Forecasting for the patient 13.0 is sucessfull
+2024-03-04 14:35:52 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:52 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:52 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:52 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:54 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:54 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:54 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:54 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:57 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:57 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:57 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:57 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:57 - INFO - Processing the forecasting for the patient 11.0
+2024-03-04 14:35:59 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:59 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:59 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:59 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:35:59 - INFO - Forecasting for the patient 11.0 is sucessfull
+2024-03-04 14:36:02 - INFO - Processing the forecasting for the patient 32.0
+2024-03-04 14:36:02 - INFO - Processing the forecasting for the patient 32.0
+2024-03-04 14:36:02 - INFO - Processing the forecasting for the patient 32.0
+2024-03-04 14:36:02 - INFO - Processing the forecasting for the patient 32.0
+2024-03-04 14:36:02 - INFO - Processing the forecasting for the patient 32.0
+2024-03-04 14:36:02 - INFO - Processing the forecasting for the patient 32.0
+2024-03-04 14:36:03 - INFO - Forecasting for the patient 32.0 is sucessfull
+2024-03-04 14:36:03 - INFO - Forecasting for the patient 32.0 is sucessfull
+2024-03-04 14:36:03 - INFO - Forecasting for the patient 32.0 is sucessfull
+2024-03-04 14:36:03 - INFO - Forecasting for the patient 32.0 is sucessfull
+2024-03-04 14:36:03 - INFO - Forecasting for the patient 32.0 is sucessfull
+2024-03-04 14:36:03 - INFO - Forecasting for the patient 32.0 is sucessfull
+2024-03-04 14:36:08 - INFO - Processing the forecasting for the patient 2.0
+2024-03-04 14:36:08 - INFO - Processing the forecasting for the patient 2.0
+2024-03-04 14:36:08 - INFO - Processing the forecasting for the patient 2.0
+2024-03-04 14:36:08 - INFO - Processing the forecasting for the patient 2.0
+2024-03-04 14:36:08 - INFO - Processing the forecasting for the patient 2.0
+2024-03-04 14:36:08 - INFO - Processing the forecasting for the patient 2.0
+2024-03-04 14:36:08 - INFO - Processing the forecasting for the patient 2.0
+2024-03-04 14:36:08 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-03-04 14:36:08 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-03-04 14:36:08 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-03-04 14:36:08 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-03-04 14:36:08 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-03-04 14:36:08 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-03-04 14:36:08 - INFO - Forecasting for the patient 2.0 is sucessfull
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - INFO - This is an info message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - WARNING - This is a warning message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:42:50 - ERROR - This is an error message
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:10 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:11 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - INFO - This is an info message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - WARNING - This is a warning message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:18 - ERROR - This is an error message
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:33 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:49:34 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - INFO - This is an info message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - WARNING - This is a warning message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:23 - ERROR - This is an error message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - INFO - This is an info message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - WARNING - This is a warning message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:30 - ERROR - This is an error message
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:54 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:53:55 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:05 - INFO - Processing the forecasting for the patient 1.0
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:06 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:09 - INFO - Processing the forecasting for the patient 907.0
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-04 14:54:10 - INFO - Forecasting for the patient 907.0 is sucessfull
+2024-03-05 19:15:14 - INFO - Processing the forecasting for the patient 1.0
+2024-03-05 19:15:15 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-05 19:15:18 - INFO - Processing the forecasting for the patient 1.0
+2024-03-05 19:15:18 - INFO - Processing the forecasting for the patient 1.0
+2024-03-05 19:15:19 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-05 19:15:19 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-05 19:15:22 - INFO - Processing the forecasting for the patient 905.0
+2024-03-05 19:15:22 - INFO - Processing the forecasting for the patient 905.0
+2024-03-05 19:15:22 - INFO - Processing the forecasting for the patient 905.0
+2024-03-05 19:15:23 - INFO - Forecasting for the patient 905.0 is sucessfull
+2024-03-05 19:15:23 - INFO - Forecasting for the patient 905.0 is sucessfull
+2024-03-05 19:15:23 - INFO - Forecasting for the patient 905.0 is sucessfull
+2024-03-05 19:15:53 - INFO - Processing the forecasting for the patient 1.0
+2024-03-05 19:15:53 - INFO - Processing the forecasting for the patient 1.0
+2024-03-05 19:15:53 - INFO - Processing the forecasting for the patient 1.0
+2024-03-05 19:15:53 - INFO - Processing the forecasting for the patient 1.0
+2024-03-05 19:15:54 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-05 19:15:54 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-05 19:15:54 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-05 19:15:54 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-11 09:00:02 - INFO - This is an info message
+2024-03-11 09:00:02 - INFO - This is an info message
+2024-03-11 09:00:02 - WARNING - This is a warning message
+2024-03-11 09:00:02 - WARNING - This is a warning message
+2024-03-11 09:00:02 - ERROR - This is an error message
+2024-03-11 09:00:02 - ERROR - This is an error message
+2024-03-11 10:58:17 - INFO - This is an info message
+2024-03-11 10:58:17 - INFO - This is an info message
+2024-03-11 10:58:17 - INFO - This is an info message
+2024-03-11 10:58:17 - WARNING - This is a warning message
+2024-03-11 10:58:17 - WARNING - This is a warning message
+2024-03-11 10:58:17 - WARNING - This is a warning message
+2024-03-11 10:58:17 - ERROR - This is an error message
+2024-03-11 10:58:17 - ERROR - This is an error message
+2024-03-11 10:58:17 - ERROR - This is an error message
+2024-03-18 19:08:00 - INFO - Processing the forecasting for the patient 1.0
+2024-03-18 19:08:01 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-19 20:17:38 - INFO - This is an info message
+2024-03-19 20:17:38 - WARNING - This is a warning message
+2024-03-19 20:17:38 - ERROR - This is an error message
+2024-03-24 19:57:32 - INFO - Processing the forecasting for the patient 1.0
+2024-03-24 19:57:32 - INFO - Forecasting for the patient 1.0 is sucessfull
+2024-03-24 19:58:00 - INFO - Serialization of dataframe to Arrow table was unsuccessful due to: ("Could not convert '120/70' with type str: tried to convert to double", 'Conversion failed for column 1232 with type object'). Applying automatic fixes for column types to make the dataframe Arrow-compatible.
+2024-03-24 19:59:46 - INFO - This is an info message
+2024-03-24 19:59:46 - INFO - This is an info message
+2024-03-24 19:59:46 - WARNING - This is a warning message
+2024-03-24 19:59:46 - WARNING - This is a warning message
+2024-03-24 19:59:46 - ERROR - This is an error message
+2024-03-24 19:59:46 - ERROR - This is an error message
