@@ -279,5 +279,5 @@ with col2:
             st.write("Forecasting failed.")
             logging.info(f'Internal error occured at the model, main file at forecasting')
     except Exception as e:
-        st.write(str(e),"hello")
+        st.write(str(e))
         logging.error("Exception araises after the failer of the forecasting fopr the patient",grpIdS)
