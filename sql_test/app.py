@@ -55,7 +55,7 @@ def dosage_page():
         columns = ', '.join(data.keys())
         values_template = ', '.join(['%s'] * len(data))
 
-        insert_query = f"INSERT INTO new_table ({columns}) VALUES ({values_template})"
+        insert_query = "INSERT INTO new_table ({columns}) VALUES ({values_template})"
         cursor.execute(insert_query, tuple(data.values()))
 
         connection.commit()
