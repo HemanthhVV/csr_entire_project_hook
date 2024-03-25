@@ -409,7 +409,7 @@
     {% endif %}
     <form method="post" action="/submit" onsubmit="return validateInput()">
         Name: <input type="text" name="name" required><br>
-        Patient_ID: <input type="number" name="id" required><br>
+        Patient_ID: <input type="number" step="0.01" name="id" required><br>
         Hospital Visited Date: <input type="date" name="hospital_visited_date" required><br>
         <label for="gender">Gender:</label>
         <select name="gender" style="width: 200px; height: 30px;">
@@ -417,9 +417,9 @@
             <option value=0>Female</option>
         </select>
         <br><br>
-        Age: <input type="number" name="age" id="age"><br>
-        Height: <input type="number" name="height" id="height"><br>
-        Weight: <input type="number" name="weight" id="weight"><br>
+        Age: <input type="number" step="0.01" name="age" id="age"><br>
+        Height: <input type="number" step="0.01" name="height" id="height"><br>
+        Weight: <input type="number" step="0.01" name="weight" id="weight"><br>
         BP: <input type="text" name="bp" id="bp"><br>
         <label for="diabetes">Diabetes:</label>
         <select name="diabetes" style="width: 200px; height: 30px;">
@@ -460,9 +460,9 @@
             <option value="Yes">Yes</option>
         </select>
         <br><br>
-        Glomerular Filtration: <input type="number" name="glomerular_filtration" id="glomerular_filtration"><br>
-        Serum Creatinine Level: <input type="number" name="serum_creatinine_level" id="serum_creatinine_level"><br>
-        Haemoglobin Level: <input type="number" name="haemoglobin_level" id="haemoglobin_level"><br>
+        Glomerular Filtration: <input type="number" step="0.01" name="glomerular_filtration" id="glomerular_filtration"><br>
+        Serum Creatinine Level: <input type="number" step="0.01" name="serum_creatinine_level" id="serum_creatinine_level"><br>
+        Haemoglobin Level: <input type="number" step="0.01" name="haemoglobin_level" id="haemoglobin_level"><br>
         <label for="urinary_tract_infection">Urinary Tract Infection:</label>
         <select name="urinary_tract_infection" style="width: 200px; height: 30px;" required>
             <option value="No">No</option>
@@ -481,16 +481,16 @@
             <option value="Yes">Yes</option>
         </select>
         <br><br>
-        Total Water Intake: <input type="number" name="total_water_intake" id="total_water_intake"><br>
+        Total Water Intake: <input type="number" step="0.01" name="total_water_intake" id="total_water_intake"><br>
         <label for="living_area">Living Area:</label>
         <select name="living_area" style="width: 200px; height: 30px;" required>
             <option value="Rural">Rural</option>
             <option value="Urban">Urban</option>
         </select>
         <br><br>
-        Total Count: <input type="number" name="total_count" id="total_count"><br>
-        Random Blood Sugar: <input type="number" name="random_blood_sugar" id="random_blood_sugar"><br>
-        Urea: <input type="number" name="urea" id="urea"><br>
+        Total Count: <input type="number" step="0.01" name="total_count" id="total_count"><br>
+        Random Blood Sugar: <input type="number" step="0.01" name="random_blood_sugar" id="random_blood_sugar"><br>
+        Urea: <input type="number" step="0.01" name="urea" id="urea"><br>
         <label for="pus_cells">Pus Cells:</label>
         <select name="pus_cells" style="width: 200px; height: 30px;" required>
             <option value="less">less</option>
