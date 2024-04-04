@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for , session
 import pymysql
-import pipeline
 # from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
