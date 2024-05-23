@@ -5,12 +5,12 @@ import pymysql
 app = Flask(__name__)
 
 # MySQL configuration
-db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'vvh@sql@07',
-    'database': 'new_schema',
-}
+#db_config = {
+#    'host': 'localhost',
+#    'user': 'root',
+#    'password': 'vvh@sql@07',
+#    'database': 'new_schema',
+#}
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:vvh@sql@07@localhost/new_schema'
 # db = SQLAlchemy(app)
 # class SelectedOption(db.Model):
