@@ -387,7 +387,7 @@
         box-sizing: border-box;
     }
 
-    #newMedicineSection button {
+    #newSection button {
         padding: 10px;
         background-color: #4CAF50;
         color: white;
@@ -396,7 +396,19 @@
         cursor: pointer;
     }
 
-    #newMedicineSection button:hover {
+    #newSection button:hover {
+        background-color: #45a049;
+    }
+    #newinfoSection button {
+        padding: 8px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #newinfoSection button:hover {
         background-color: #45a049;
     }
     </style>
@@ -509,7 +521,16 @@
             <option value="Non-Veg">Non-Veg</option>
         </select>
         <br><br>
-        Other Medical Condition: <input type="text" name="other_medical_condition" value="nil"><br>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div style="flex: 1;"> 
+                <label for="other_medical_condition" style="margin-right: 10px;">Other Medical Condition:</label>
+                <input type="text" name="other_medical_condition" value="nil">
+            </div>
+            <div id="newinfoSection" style="margin-left: 10px;">
+                <label for="addon-info" style="margin-right: 10px;">Addon-Info:</label>
+                <button type="button" onclick="redirectToAddInfoPage()">Enter details</button>
+            </div>
+        </div>               
         <!-- BMI: <input type="text" name="bmi" required><br>
         Stage: <input type="text" name="stage" required><br> -->
         <div style="display: flex; align-items: center;">
@@ -522,7 +543,7 @@
                     {% endfor %}
                 </select>
             </div>
-            <div id="newMedicineSection">
+            <div id="newSection">
                 <label for="medicines">To add new medicines:</label>
                 <button type="button" onclick="redirectToDosagePage()">Enter New Meds</button>
             </div>
@@ -539,6 +560,9 @@
         <script>
             function redirectToDosagePage() {
                 window.location.href = "/dosage";
+            }
+            function redirectToAddInfoPage() {
+                window.location.href = "/additional";
             }
         </script>
         </div>

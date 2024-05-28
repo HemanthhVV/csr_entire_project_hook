@@ -5,17 +5,12 @@ import pymysql
 app = Flask(__name__)
 
 # MySQL configuration
-#db_config = {
-#    'host': 'localhost',
-#    'user': 'root',
-#    'password': 'vvh@sql@07',
-#    'database': 'new_schema',
-#}
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:vvh@sql@07@localhost/new_schema'
-# db = SQLAlchemy(app)
-# class SelectedOption(db.Model):
-#     id = db.Column(db.Integer, primary_key=True)
-#     option_name = db.Column(db.String(255), nullable=False)
+db_config = {
+    'host': 'localhost',
+    'user': 'root',
+    'password': 'vvh@sql@07',
+    'database': 'new_schema',
+}
 
 # Function to establish a connection to MySQL
 def get_mysql_connection():
@@ -40,6 +35,10 @@ def index():
 @app.route('/dosage')
 def dosage():
     return render_template('dosage.htm')
+
+@app.route('/additional')
+def additional():
+    return render_template('additional.htm')
 
 @app.route('/submit_dosage', methods=['GET', 'POST'])
 def dosage_page():
@@ -66,6 +65,53 @@ def dosage_page():
     except Exception as e:
         # Handle exceptions, e.g., display an error page
         return f"Error: {str(e)}"
+
+#route for the additional attributes
+@app.route('/addon-info', methods=['POST','GET'])
+def addon():
+    try:
+        # Extract data from the form
+        data = {
+            'patient_id': request.form['patient_id'],
+            'serum_calcium_level': request.form.get('serum_calcium_level', None),
+            'serum_phosphorous_level': request.form.get('serum_phosphorous_level', None),
+            'serum_potassium_level': request.form.get('serum_potassium_level', None),
+            'serum_sodium_level': request.form.get('serum_sodium_level', None),
+            'serum_bicarbonate_level': request.form.get('serum_bicarbonate_level', None),
+            'urinary_tract_infection': request.form.get('urinary_tract_infection', None),
+            'sun_exposure': request.form.get('sun_exposure', None),
+            'cholesterol': request.form.get('cholesterol', None),
+            'magnesium': request.form.get('magnesium', None),
+            'uric_acid': request.form.get('uric_acid', None),
+            'chloride': request.form.get('chloride', None),
+            'protein': request.form.get('protein', None)
+        }
+
+        # Establish database connection
+        connection = get_mysql_connection()
+        cursor = connection.cursor()
+
+        # Prepare SQL query
+        columns = ', '.join(data.keys())
+        values_template = ', '.join(['%s'] * len(data))
+
+        insert_query = f"INSERT INTO new_schema.additional_attributes ({columns}) VALUES ({values_template})"
+        
+        # Execute the query
+        cursor.execute(insert_query, tuple(data.values()))
+
+        # Commit changes and close cursor/connection
+        connection.commit()
+        cursor.close()
+        connection.close()
+
+        # Redirect to index page after successful insertion
+        return redirect(url_for('index'))
+
+    except Exception as e:
+        # Handle exceptions, e.g., display an error page
+        return f"Error: {str(e)}"
+
 
 # @app.route('/submit_dosage', methods=['GET', 'POST'])
 # def dosage_page():
@@ -149,12 +195,6 @@ def submit():
         # Handle exceptions, e.g., display an error page
         return f"Error: {str(e)}"
 
-# @app.route('/index')
-# def index():
-#     # Retrieve the success flag from session
-#     success = session.pop('success', False)
-
-#     return render_template('index.htm', success=success)
 
 if __name__ == '__main__':
     app.run(debug=True)

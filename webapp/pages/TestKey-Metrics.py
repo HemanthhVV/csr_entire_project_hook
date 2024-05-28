@@ -353,6 +353,8 @@ conn = st.connection('mysql', type='sql')
 
 df = conn.query('SELECT * from finaliti', ttl=600)
 meds = conn.query('SELECT * from new_table', ttl=600)
+meds["id"] = meds.index
+
 
 df = Staging(df=df)
 data = gfr_meds(df)
