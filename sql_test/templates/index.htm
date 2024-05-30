@@ -528,7 +528,7 @@
             </div>
             <div id="newinfoSection" style="margin-left: 10px;">
                 <label for="addon-info" style="margin-right: 10px;">Addon-Info:</label>
-                <button type="button" onclick="redirectToAddInfoPage()">Enter details</button>
+                <button type="button" onclick="redirectToAddInfoPage()" target = "_blank">Enter details</button>
             </div>
         </div>               
         <!-- BMI: <input type="text" name="bmi" required><br>
@@ -559,10 +559,10 @@
         </script>
         <script>
             function redirectToDosagePage() {
-                window.location.href = "/dosage";
+                window.open("/dosage",'_blank')
             }
             function redirectToAddInfoPage() {
-                window.location.href = "/additional";
+                window.open("/additional",'_blank')
             }
         </script>
         </div>
