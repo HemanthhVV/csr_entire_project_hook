@@ -53,18 +53,18 @@ def dosage_page():
         columns = ', '.join(data.keys())
         values_template = ', '.join(['%s'] * len(data))
 
-        insert_query = "INSERT INTO new_table ({columns}) VALUES ({values_template})"
+        insert_query = f"INSERT INTO new_table ({columns}) VALUES ({values_template})"
         cursor.execute(insert_query, tuple(data.values()))
 
         connection.commit()
         cursor.close()
         connection.close()
 
-        return redirect(url_for('index'))
+        return redirect(url_for('dosage'))
 
     except Exception as e:
         # Handle exceptions, e.g., display an error page
-        return f"Error: {str(e)}"
+        return f"Error 1: {str(e)}"
 
 #route for the additional attributes
 @app.route('/addon-info', methods=['POST','GET'])
@@ -106,7 +106,7 @@ def addon():
         connection.close()
 
         # Redirect to index page after successful insertion
-        return redirect(url_for('index'))
+        return redirect(url_for('additional'))
 
     except Exception as e:
         # Handle exceptions, e.g., display an error page
@@ -189,7 +189,8 @@ def submit():
         # Set a flag to indicate success
         success = True
 
-        return render_template('index.htm', success=success)
+        #return render_template('index.htm', success=success)
+        return  redirect(url_for('index'))
 
     except Exception as e:
         # Handle exceptions, e.g., display an error page

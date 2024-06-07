@@ -111,10 +111,10 @@ def validate_inputs(age, diabetes, scr, haem, twi, area, tc, rbs, urea, worker, 
     if not 0 <= float(scr) <= 30:
         errors.append("Creatinine must be between 0 and 30.")
 
-    if not 0 <= float(haem) <= 16:
-        errors.append("Haemoglobin must be between 0 and 16.")
+    if not 0 <= float(haem) <= 20:
+        errors.append("Haemoglobin must be between 0 and 20.")
 
-    if not 1 <= int(twi) <= 4:
+    if not 1 <= float(twi) <= 4:
         errors.append("Water Intake must be between 1 and 4.")
 
     if not 0 <= int(area) <= 1:

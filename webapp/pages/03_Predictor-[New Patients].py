@@ -100,7 +100,7 @@ def validate_inputs(age, height , weight, t_hb, t_scr, t_tc, t_sys, t_di, t_rbs,
     if not 0 <= float(t_rbs) <= 500:
         errors.append("Random Blood Sugar must be between 0 and 500.")
 
-    if not 1 <= int(t_tw) <= 6:
+    if not 1 <= float(t_tw) <= 6:
         errors.append("Total Water Intake must be between 1 and 6.")
 
     if not 0 <= int(t_la) <= 1:
@@ -169,7 +169,7 @@ with col4:
 #     p=u.load()
 # model = np.load('model.pkl',allow_pickle=True)
 ml,score,unique_patients = Model(df=df)
-st.write(unique_patients)
+#st.write(unique_patients)
 cols1 = [age,height ,weight,t_hb,t_scr,t_tc,t_sys,t_di,t_rbs,t_tw,t_la,t_cvd,t_pkd,t_kih,t_db]
 try:
     if result:
@@ -384,10 +384,14 @@ try:
                 st.write(f"Predicted GFR for Year {current_year+1} - ",pred[0])
                 st.write(f"Predicted GFR for  Year {current_year+2}- ",pred2[0])
                 st.write(f"Predicted GFR for Year {current_year+3} - ",pred3[0])
-                PercentDiff = int(gfr) * 0.044
+                PercentDiff = int(gfr) * 0.044 * 3  # grf * (4.416/100)
                 DiffInGfr = int(gfr) - pred3
-                st.write(PercentDiff)
-                st.write(DiffInGfr)
+                #st.write(PercentDiff)
+                #st.write(f"The threshold value for this patient as per research {DiffInGfr[0]}")
+                #st.write("Note : As per research , if the threshold value for Indian patients is 4.416% of initial GFR")
+                st.write("Based on the research as per the threshold value for Indian patients ")
+                #st.write("")
+                #st.write(DiffInGfr)
                 if PercentDiff < DiffInGfr : st.write("Patient is in Risk Condition") 
                 else:st.write("Patient is not in Risk Condition")
                 st.toast(f"Model Accuracy : {round(score,2)*100}% ",icon="✨")

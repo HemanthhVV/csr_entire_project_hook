@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,12 +45,12 @@
     }
 
     h1 {
-            text-align: center;
-            color: #333;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            letter-spacing: 2px;
-        }
+        text-align: center;
+        color: #333;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+    }
 
     input[type="submit"]:hover {
         background-color: #45a049;
@@ -61,20 +62,20 @@
         <label for="patient_id">Patient ID:</label>
         <input type="number" id="patient_id" name="patient_id" required><br>
 
-        <label for="serum_calcium_level">Serum Calcium Level:</label>
-        <input type="number" step="0.01" id="serum_calcium_level" name="serum_calcium_level" required><br>
+        <label for="serum_calcium_level">Serum Calcium Level (5 - 13 mg/dL):</label>
+        <input type="number" step="0.01" id="serum_calcium_level" name="serum_calcium_level" min="5" max="13" required><br>
 
-        <label for="serum_phosphorous_level">Serum Phosphorous Level:</label>
-        <input type="number" step="0.01" id="serum_phosphorous_level" name="serum_phosphorous_level" required><br>
+        <label for="serum_phosphorous_level">Serum Phosphorous Level (1.5 - 8.5 mg/dL):</label>
+        <input type="number" step="0.01" id="serum_phosphorous_level" name="serum_phosphorous_level" min="1.5" max="8.5" required><br>
 
-        <label for="serum_potassium_level">Serum Potassium Level:</label>
-        <input type="number" step="0.01" id="serum_potassium_level" name="serum_potassium_level" required><br>
+        <label for="serum_potassium_level">Serum Potassium Level (2 - 7 mmol/L):</label>
+        <input type="number" step="0.01" id="serum_potassium_level" name="serum_potassium_level" min="2" max="7" required><br>
 
-        <label for="serum_sodium_level">Serum Sodium Level:</label>
-        <input type="number" step="0.01" id="serum_sodium_level" name="serum_sodium_level" required><br>
+        <label for="serum_sodium_level">Serum Sodium Level (100 - 150 mmol/L):</label>
+        <input type="number" step="0.01" id="serum_sodium_level" name="serum_sodium_level" min="100" max="150" required><br>
 
-        <label for="serum_bicarbonate_level">Serum Bicarbonate Level:</label>
-        <input type="number" step="0.01" id="serum_bicarbonate_level" name="serum_bicarbonate_level" required><br>
+        <label for="serum_bicarbonate_level">Serum Bicarbonate Level (5 - 35 mmol/L):</label>
+        <input type="number" step="0.01" id="serum_bicarbonate_level" name="serum_bicarbonate_level" min="5" max="35" required><br>
 
         <label for="urinary_tract_infection">Urinary Tract Infection:</label>
         <select name="urinary_tract_infection" style="width: 100%; height: 30px;" required>
@@ -88,20 +89,20 @@
             <option value="no">No</option>
         </select><br>
 
-        <label for="cholestrol">Cholesterol:</label>
-        <input type="number" step="0.01" id="cholestrol" name="cholestrol"><br>
+        <label for="cholestrol">Cholesterol (100 - 300 mg/dL):</label>
+        <input type="number" step="0.01" id="cholestrol" name="cholestrol" min="100" max="300"><br>
 
-        <label for="magnesium">Magnesium:</label>
-        <input type="number" step="0.01" id="magnesium" name="magnesium"><br>
+        <label for="magnesium">Magnesium (1.5 - 3 mg/dL):</label>
+        <input type="number" step="0.01" id="magnesium" name="magnesium" min="1.5" max="3"><br>
 
-        <label for="uric_acid">Uric Acid:</label>
-        <input type="number" step="0.01" id="uric_acid" name="uric_acid"><br>
+        <label for="uric_acid">Uric Acid (2 - 15 mg/dL):</label>
+        <input type="number" step="0.01" id="uric_acid" name="uric_acid" min="2" max="15"><br>
 
-        <label for="chloride">Chloride:</label>
-        <input type="number" step="0.01" id="chloride" name="chloride"><br>
+        <label for="chloride">Chloride (80 - 110 mmol/L):</label>
+        <input type="number" step="0.01" id="chloride" name="chloride" min="80" max="110"><br>
 
-        <label for="protein">Protein:</label>
-        <input type="number" step="0.01" id="protein" name="protein"><br>
+        <label for="protein">Protein (4 - 9 g/dL):</label>
+        <input type="number" step="0.01" id="protein" name="protein" min="4" max="9"><br>
 
         <br><br>
 

@@ -224,7 +224,7 @@ col1,col2 = st.columns([2,4])
 # st.write(df.head(5))
 # st.write(AddingAttributes(df[df['id'] == 800]))
 with col1:
-    grpIdS = st.selectbox("Patient-ID",sari["id"].unique())
+    grpIdS = st.selectbox("Patient-ID",sari["id"].unique().astype(int))
     st.write("YearWise Details Of Patients:")
     df2 = sari
     df2["glomerular_filration"] = df2["glomerular_filration"].astype(float)
@@ -263,13 +263,15 @@ with col2:
         st.pyplot(fig)
 
         if forecast_values is not None:
-            st.write(f'Mean GFR values for {grpIdS} for the Next 3 Years:')
+            st.write(f'Forecasted GFR values for Patient "{grpIdS}" for the Next 3 Years:')
             for year in range(1, 4):
                 st.write(f'GFR value for Year {year}: {forecast_values[year]}')
             sum = (forecast_values[2] - forecast_values[3])
             measure = forecast_values[2] *(4.416/100)
-            st.write("The change of difference of GFR ",round(sum,5))
-            st.write("The 4.416 % of their last Year 3 is ",round(measure,2))
+            #st.write("The change of difference of GFR ",round(sum,5))
+            #st.write("The threshold value for Indian patient as per research ",round(measure,2))
+            st.write("Based on the research as per the threshold value for Indian patient")
+
             if(sum>measure or forecast_values[3]<25):
                 st.write("Patient is in Risk Condition")
             else:
