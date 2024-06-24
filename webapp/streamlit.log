@@ -889,3 +889,37 @@ Name: id, Length: 5640, dtype: float64
 2024-06-07 13:04:59 - ERROR - This is an error message
 2024-06-07 13:04:59 - ERROR - This is an error message
 2024-06-07 13:04:59 - ERROR - This is an error message
+2024-06-24 09:43:30 - INFO - Processing the forecasting for the patient 1
+2024-06-24 09:43:30 - INFO - Processing the forecasting for the patient 1
+2024-06-24 09:43:30 - INFO - Processing the forecasting for the patient 1
+2024-06-24 09:43:30 - INFO - Processing the forecasting for the patient 1
+2024-06-24 09:43:32 - INFO - Forecasting for the patient 1 is sucessfull
+2024-06-24 09:43:32 - INFO - Forecasting for the patient 1 is sucessfull
+2024-06-24 09:43:32 - INFO - Forecasting for the patient 1 is sucessfull
+2024-06-24 09:43:32 - INFO - Forecasting for the patient 1 is sucessfull
+2024-06-24 09:43:44 - INFO - Processing the forecasting for the patient 1
+2024-06-24 09:43:44 - INFO - Processing the forecasting for the patient 1
+2024-06-24 09:43:44 - INFO - Processing the forecasting for the patient 1
+2024-06-24 09:43:45 - INFO - Forecasting for the patient 1 is sucessfull
+2024-06-24 09:43:45 - INFO - Forecasting for the patient 1 is sucessfull
+2024-06-24 09:43:45 - INFO - Forecasting for the patient 1 is sucessfull
+2024-06-24 09:52:08 - WARNING - This is a warning message
+2024-06-24 09:52:08 - WARNING - This is a warning message
+2024-06-24 09:52:08 - WARNING - This is a warning message
+2024-06-24 09:52:08 - ERROR - This is an error message
+2024-06-24 09:52:08 - ERROR - This is an error message
+2024-06-24 09:52:08 - ERROR - This is an error message
+2024-06-24 10:03:12 - WARNING - This is a warning message
+2024-06-24 10:03:12 - WARNING - This is a warning message
+2024-06-24 10:03:12 - WARNING - This is a warning message
+2024-06-24 10:03:12 - ERROR - This is an error message
+2024-06-24 10:03:12 - ERROR - This is an error message
+2024-06-24 10:03:12 - ERROR - This is an error message
+2024-06-24 10:03:14 - WARNING - This is a warning message
+2024-06-24 10:03:14 - WARNING - This is a warning message
+2024-06-24 10:03:14 - WARNING - This is a warning message
+2024-06-24 10:03:14 - WARNING - This is a warning message
+2024-06-24 10:03:14 - ERROR - This is an error message
+2024-06-24 10:03:14 - ERROR - This is an error message
+2024-06-24 10:03:14 - ERROR - This is an error message
+2024-06-24 10:03:14 - ERROR - This is an error message

@@ -3,7 +3,7 @@ import time
 import streamlit as st
 import pandas as pd
 from Pipeline import Staging
-from streamlit_extras.metric_cards import style_metric_cards
+#from streamlit_extras.metric_cards import style_metric_card
 
 
 import streamlit as st

@@ -132,7 +132,8 @@ def random_value_generator(high_risk_patient,recursion_count,max_recursions):
     else:
         return random_value_generator(high_risk_patient, recursion_count=recursion_count + 1, max_recursions=max_recursions)
 
-conn = st.connection('mysql', type='sql')
+conn = st.connection( name="mysql", type="sql")
+
 
 # low = conn.query('SELECT * from whatif_train;',ttl=0)
 data = conn.query('SELECT * from finaliti', ttl=0)
