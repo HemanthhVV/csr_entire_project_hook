@@ -7,8 +7,11 @@ import logging
 import warnings
 import streamlit as st
 import pandas as pd
-from functions import *
 from sklearn.preprocessing import LabelEncoder
+import sys
+sys.path.append("helpers/")
+
+from functions import *
 from Pipeline import *
 st.set_page_config(page_title="Coats-Forecaster",page_icon="coats.png",layout="wide")
 st.set_option('deprecation.showPyplotGlobalUse', False)

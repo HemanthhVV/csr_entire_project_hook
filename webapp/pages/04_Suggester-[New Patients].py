@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import logging
+import sys
+sys.path.append("helpers/")
 from Pipeline import AddingAttributes,convert_to_list, convert_to_string,gfr_meds
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity

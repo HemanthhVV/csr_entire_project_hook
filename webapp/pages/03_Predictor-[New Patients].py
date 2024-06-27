@@ -4,6 +4,8 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
+import sys
+sys.path.append("helpers/")
 from Pipeline import AddingAttributes,Model
 from sklearn.preprocessing import PolynomialFeatures
 st.set_page_config(page_title="Coats-Predictor",page_icon="coats.png")

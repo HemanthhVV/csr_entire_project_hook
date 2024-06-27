@@ -6,6 +6,8 @@ import multiprocessing as mp
 # import streamlit_scrollable_textbox as st.write
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import sys
+sys.path.append("helpers/")
 from Pipeline import AddingAttributes,LabelConverter,gfr_meds,convert_to_list
 st.set_page_config(page_title="Coats-Recommander",page_icon="coats.png")
 st.markdown("""

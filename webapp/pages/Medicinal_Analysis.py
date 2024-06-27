@@ -2,6 +2,8 @@ import logging
 import time
 import streamlit as st
 import pandas as pd
+import sys
+sys.path.append("helpers/")
 from Pipeline import Staging
 #from streamlit_extras.metric_cards import style_metric_card
 
