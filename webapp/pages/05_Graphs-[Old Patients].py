@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import Pipeline
-st.set_page_config(page_title="Coats-Graph Analysis",page_icon="coats.png",layout="wide")
+st.set_page_config(page_title="Graph Analysis",layout="wide")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 conn = st.connection('mysql', type='sql')
 

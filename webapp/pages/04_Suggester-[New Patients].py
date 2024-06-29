@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 logging.basicConfig(filename='logs.log')
-st.set_page_config(page_title="Coats-Suggester",page_icon="coats.png")
+st.set_page_config(page_title="Suggester")
 st.markdown("""
 <style>
 .big-font {

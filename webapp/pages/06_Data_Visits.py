@@ -13,7 +13,8 @@ headers = {
     "selector": "th:not(.index_name)",
     "props": "background-color: #800000; color: white;"
 }
-st.set_page_config(page_title="Coats-Data",page_icon="coats.png",layout="wide")
+st.set_page_config(page_title="Data Visits",layout="wide")
+
 
 st.markdown("<h2 style='text-align:center;colour:white;'><u>Key Metrics of Patients</u></h2>",unsafe_allow_html=True)
 

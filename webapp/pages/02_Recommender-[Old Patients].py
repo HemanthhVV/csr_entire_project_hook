@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import sys
 sys.path.append("helpers/")
 from Pipeline import AddingAttributes,LabelConverter,gfr_meds,convert_to_list
-st.set_page_config(page_title="Coats-Recommander",page_icon="coats.png")
+st.set_page_config(page_title="Recommander")
 st.markdown("""
 <style>
 .big-font {

@@ -8,7 +8,8 @@ import sys
 sys.path.append("helpers/")
 from Pipeline import AddingAttributes,Model
 from sklearn.preprocessing import PolynomialFeatures
-st.set_page_config(page_title="Coats-Predictor",page_icon="coats.png")
+st.set_page_config(page_title="Predictor")
+
 # model = pkl.load(open('model.pkl','rb'))
 
 conn = st.connection('mysql', type='sql')

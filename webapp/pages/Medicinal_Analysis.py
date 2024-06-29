@@ -9,7 +9,7 @@ from Pipeline import Staging
 
 
 import streamlit as st
-st.set_page_config(page_title="Metrics",page_icon='coats.png',layout="centered")
+st.set_page_config(page_title="Metrics",layout="centered")
 #streamlit-extras-code
 css = '''
 <style>
