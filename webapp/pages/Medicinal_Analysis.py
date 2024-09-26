@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 import sys
 sys.path.append("helpers/")
-from Pipeline import Staging
+from helpers.Pipeline import Staging
 #from streamlit_extras.metric_cards import style_metric_card
 
 
@@ -378,9 +378,7 @@ file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
 # Example usage of logging
-logger.info("This is an info message")
-logger.warning("This is a warning message")
-logger.error("This is an error message")
+logger.info("Data fetched Successfully from 'Medicinial Analysis'")
 
 
 # df.to_csv("Finaliti.csv")

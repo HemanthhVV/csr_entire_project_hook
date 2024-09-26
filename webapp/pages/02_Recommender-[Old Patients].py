@@ -7,9 +7,19 @@ import multiprocessing as mp
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import sys
-sys.path.append("helpers/")
-from Pipeline import AddingAttributes,LabelConverter,gfr_meds,convert_to_list
+import logging
+from helpers.Pipeline import AddingAttributes,LabelConverter,gfr_meds,convert_to_list
 st.set_page_config(page_title="Recommander")
+logger = logging.getLogger("streamlit")
+
+conn = st.connection( name="mysql", type="sql")
+
+file_handler = logging.FileHandler("streamlit.log")
+file_handler.setLevel(logging.INFO)
+file_formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s",datefmt="%Y-%m-%d %H:%M:%S")
+file_handler.setFormatter(file_formatter)
+logger.addHandler(file_handler)
+logger.info("Memory cached successful for recommander")
 st.markdown("""
 <style>
 .big-font {
@@ -134,8 +144,6 @@ def random_value_generator(high_risk_patient,recursion_count,max_recursions):
     else:
         return random_value_generator(high_risk_patient, recursion_count=recursion_count + 1, max_recursions=max_recursions)
 
-conn = st.connection( name="mysql", type="sql")
-
 
 # low = conn.query('SELECT * from whatif_train;',ttl=0)
 data = conn.query('SELECT * from finaliti', ttl=0)
@@ -184,7 +192,7 @@ for i in high_id:
     high = pd.concat([high,df.tail(1)])
     # st.write(high)
     # break
-# 
+#
 
 # st.write(high)
 # data = data.drop(['Unnamed: 0.7', 'Unnamed: 0.6', 'Unnamed: 0.5', 'Unnamed: 0.4', 'Unnamed: 0.3', 'Unnamed: 0.2', 'Unnamed: 0.1', 'Unnamed: 0', 'index'], axis = 1)
@@ -237,7 +245,7 @@ for _, high_risk_patient in high.iterrows():
     # Create a dictionary to store hypothetical patient data
     recursion_count = 0
     max_recursions = 20
-    hypothetical_patient_data = random_value_generator(high_risk_patient,recursion_count,max_recursions)
+    hypothetical_patient_data = random_value_generator(high_risk_patient = high_risk_patient,recursion_count=recursion_count, max_recursions=max_recursions)
     # st.write(hypothetical_patient_data)
     hypothetical_patient_data = pd.DataFrame(hypothetical_patient_data,index=[0])
     # st.write(hypothetical_patient_data)
@@ -271,6 +279,7 @@ col1,col2 = st.columns([5,3])
 list_of_Patients = set(data["id"])
 with col1:
     patient_id = st.selectbox(label="Patient ID",options=list_of_Patients)
+    logger.info(f"Recommander running for patient {patient_id}")
     with st.spinner('Please wait...'):
         time.sleep(1)
     checkp = list(check["id"].unique())
@@ -278,10 +287,11 @@ with col1:
     for i in patients:
         if i not in checkp:
             if i not in list(low['id']):
-                not_recomm.append(i)    
-    lowrisk = tab2  
+                not_recomm.append(i)
+    lowrisk = tab2
     flag=0
     if patient_id in checkp:
+        logger.info(f"Recommandation working complete for {patient_id}")
         flag=1
         dc = high[high['id']==patient_id]
         # dc = dc.reset_index()
@@ -387,6 +397,8 @@ with col1:
 
     elif patient_id in list(low["id"].unique()):
         st.write("This patient is Progressing: LOW RISK PATIENT")
+        logger.info(f"This patient {patient_id} is progressing")
+
 with col2:
     if(flag!=0):
         st.write("###")
@@ -394,3 +406,4 @@ with col2:
         mmm = retrieve_sugg_meds(patient_id)
         for qq in mmm:
             st.write("* "+qq)
+        logger.info("Medicines fetching Success")

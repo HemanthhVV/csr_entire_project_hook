@@ -4,7 +4,7 @@ import pandas as pd
 import logging
 import sys
 sys.path.append("helpers/")
-from Pipeline import AddingAttributes,convert_to_list, convert_to_string,gfr_meds
+from helpers.Pipeline import AddingAttributes,convert_to_list, convert_to_string,gfr_meds
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -291,7 +291,7 @@ with col1:
     # st.write('Enter total_count')
     tc =(st.text_input(label="total_count"))
 
-          
+
 with col2:
     # st.write('Enter random_blood_sugar')
     rbs = (st.text_input(label="random_blood_sugar"))
@@ -330,7 +330,7 @@ with col3:
 with col4:
     st.write("###")
     sub = st.button("Get Suggestion",use_container_width=True,type="primary",help="It may take sometime to get suggestion")
-try:    
+try:
     if sub:
         colv1,colv2= st.columns([6,4])
         with colv1:
@@ -437,7 +437,7 @@ try:
                 else:
                     st.write("<b>"+str(d2['hypogfr'])+"</b> is the hypothetical GFR",unsafe_allow_html=True)
             else:
-                
+
                 st.error("Check all fields")
         with colv2:
             # if(flag!=0):

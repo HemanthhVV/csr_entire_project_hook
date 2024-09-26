@@ -2,17 +2,15 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import Pipeline
+from helpers import Pipeline
 st.set_page_config(page_title="Graph Analysis",layout="wide")
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 conn = st.connection('mysql', type='sql')
-
-# data= conn.query('SELECT * from ckdfinal_alldatap_reprocessed_noiseremoved',ttl=600)
-
 
 bmis = conn.query('SELECT * from finaliti;', ttl=0)
 bmis = Pipeline.AddingAttributes(bmis)
 # st.write(bmis[bmis['id'] == 800])
+
 data = bmis
 
 @st.cache_data
@@ -22,12 +20,12 @@ def line_sys(given,n):
     fig,ax = plt.subplots()
     ax.plot(x,y)
     ax.set_xlabel("Number of Visit")
-    # ax.xlabel("Number of Visit") 
-    ax.set_ylabel("Systolic Pressure")  
-    ax.set_title("Deviation in Systolic pressure") 
+    # ax.xlabel("Number of Visit")
+    ax.set_ylabel("Systolic Pressure")
+    ax.set_title("Deviation in Systolic pressure")
     st.pyplot(fig=fig)
     #   st.pyplot(x,y)
-    
+
 @st.cache_data
 def line_dias(given,n):
         y = np.array(given)

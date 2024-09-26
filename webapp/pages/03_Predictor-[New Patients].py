@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np
 import sys
 sys.path.append("helpers/")
-from Pipeline import AddingAttributes,Model
+from helpers.Pipeline import AddingAttributes,Model
 from sklearn.preprocessing import PolynomialFeatures
 st.set_page_config(page_title="Predictor")
 
@@ -121,7 +121,7 @@ st.markdown(
                 margin: 10px 400px;
                 width: 30%;
             }
-             
+
             [data-testid=toastContainer] [data-testid=stMarkdownContainer] > p {
                 font-size: 20px; font-style: normal; font-weight: 350;
                 foreground-color: #ffffff;
@@ -211,7 +211,7 @@ try:
                 age = age+1
             # temp = agedf.get_group(age)
             try:
-                while(True): 
+                while(True):
                     if(not(len(df[df["age"]==age]) > 2)):
                         age+=1
                     else:break
@@ -255,7 +255,7 @@ try:
                     age = age+1
                 # st.write("/After",age)
                 # st.write(age_l)
-                while(True): 
+                while(True):
                     if(not(len(df[df["age"]==age]) > 2)):
                         age+=1
                     else:break
@@ -321,7 +321,7 @@ try:
                     age = age+1
                 # st.write("After",age)
                 # st.write(age_l)
-                while(True): 
+                while(True):
                     if(not(len(df[df["age"]==age]) > 2)):
                         age+=1
                     else:break
@@ -381,7 +381,7 @@ try:
                     'kidney_injury_history':[t_kih]
                     })
                 pred3 = ml.predict(sample3)
-                
+
                 today = datetime.date.today()
                 current_year = today.year
                 st.write(f"Predicted GFR for Year {current_year+1} - ",pred[0])
@@ -395,7 +395,7 @@ try:
                 st.write("Based on the research as per the threshold value for Indian patients ")
                 #st.write("")
                 #st.write(DiffInGfr)
-                if PercentDiff < DiffInGfr : st.write("Patient is in Risk Condition") 
+                if PercentDiff < DiffInGfr : st.write("Patient is in Risk Condition")
                 else:st.write("Patient is not in Risk Condition")
                 st.toast(f"Model Accuracy : {round(score,2)*100}% ",icon="✨")
                 time.sleep(5)
