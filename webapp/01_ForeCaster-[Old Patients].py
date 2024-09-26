@@ -1,7 +1,7 @@
 import statsmodels.api as sm
 import statsmodels.tsa.arima.model as sa
 import statsmodels.tsa.statespace.sarimax as ss
-import statsmodels
+
 import numpy as np
 import logging
 import warnings
@@ -9,12 +9,16 @@ import streamlit as st
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 import sys
-sys.path.append("helpers/")
+# sys.path.append("./helpers/")
+# import sys
+# sys.path.insert(0, '/path/to/csr_entire_project_hook')
+#
+# from webapp.helpers.functions import helper_function_name
 
-from functions import *
-from Pipeline import *
+from helpers.functions import *
+from helpers.Pipeline import *
 st.set_page_config(page_title="Forecaster",layout="wide")
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 
 st.markdown("<h1 style='text-align:center;colour:white;'>Prediction of Dialysis in Patients with Early Kidney Disease</h1>",unsafe_allow_html=True)
 
@@ -33,8 +37,8 @@ file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
 #Setup-connection-mysql
-conn = st.connection('mysql', type='sql')
-
+conn = st.connection("mysql",type="sql")
+# st.connection()
 #For ARIMA-Multivariate
 #picking the data from table
 df_bh = conn.query('SELECT * from finaliti;', ttl=600)
@@ -118,7 +122,7 @@ def forecast_next_years(patient_data, input_columns, forecast_column, years=3):
         logger.error(f"Error araised from the module forecast_next_year , Exception named {e}")
         st.write(f"Error: {e}")
         return None
-    
+
 def forecast_next_three_years_sari(patient_data, input_columns, forecast_column):
     patient_data.index = pd.to_datetime(patient_data.index)
     # st.write(patient_data)
@@ -176,7 +180,7 @@ df["id"] = df["id"].astype(int)
 #         df2["glomerular_filration"] = round(df2["glomerular_filration"],0)
 #         lastrecord = df2[["hospital_visited_date","glomerular_filration"]]
 #         st.write(lastrecord)
-    
+
 #     with col2:
 #         patient_data = df[df['id'] == grpId].dropna()
 
@@ -214,8 +218,8 @@ df["id"] = df["id"].astype(int)
 #                 if(sum>measure or forecast_values[3]<25):
 #                    st.write("Patient is in Risk Condition")
 #                 else:
-#                    st.write("Patient is not in Risk Condition") 
-                
+#                    st.write("Patient is not in Risk Condition")
+
 #             else:
 #                 st.write("Forecasting failed.")
 #         except Exception as e:
@@ -278,7 +282,7 @@ with col2:
             if(sum>measure or forecast_values[3]<25):
                 st.write("Patient is in Risk Condition")
             else:
-                st.write("Patient is not in Risk Condition") 
+                st.write("Patient is not in Risk Condition")
             logger.info(f'Forecasting for the patient {grpIdS} is sucessfull')
         else:
             st.write("Forecasting failed.")
