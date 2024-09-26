@@ -4,6 +4,11 @@
     <!-- Your existing head content... -->
     <title> New Dosage Details</title>
 </head>
+<script>
+    function SubmitInput(){
+        alert("Dosage Added Sucessfully")
+    }
+</script>
 <style>
     form {
             max-width: 500px;
@@ -49,7 +54,7 @@
 </style>
 <body>
     <h1>Add Dosage Information</h1>
-    <form method="post" action="/submit_dosage">
+    <form method="post" action="/submit_dosage" onsubmit="return SubmitInput()">
         <label for="dosage">Dosage:</label>
         <input type="text" id="dosage" name="dosage" required><br>
 <!-- 
