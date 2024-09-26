@@ -7,8 +7,6 @@ import multiprocessing as mp
 def Data_modulations(df):
    return
 
-
-
 @st.cache_data
 def AddingAttributes(df):
     # df['bmi'] = round(((df["weight"] / (df["height"] * df["height"]))*703),2)
