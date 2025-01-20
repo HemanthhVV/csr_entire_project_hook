@@ -52,11 +52,15 @@ This guide outlines the steps to set up the project for local development and pr
 
 1. Use a database management tool (e.g., [DBeaver](https://dbeaver.io/)) to manage your database effectively.
 (I am using DBeaver here)
+
 2. Create a new DB connection [Shift + Ctrl + N]
+
 3. Select MySQL
 ![alt text](image-2.png)
+
 4. Make your DB configurations
 ![alt text](image-1.png)
+
 5. Create your own Database ( here. `new_schema` ), right click on it and choose `Import Data`
 ![alt text](image.png)
 
