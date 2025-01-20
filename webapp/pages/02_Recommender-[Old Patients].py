@@ -356,27 +356,27 @@ with col1:
         bmi = 0
         st.write("<u><b>This Patient is healthy and good health metrics on:",unsafe_allow_html=True)
         if(list(d['haemoglobin_level'])[0]>=12.1 and list(d['haemoglobin_level'])[0]<=17.2):
-            st.write("Haemoglobin level ✅")
+            st.write("Haemoglobin level :smile:")
         else:
             h=1
 
         if(list(d['random_blood_sugar'])[0]>=110 and list(d['haemoglobin_level'])[0]<=160):
-            st.write("Random Blood Sugar ✅")
+            st.write("Random Blood Sugar :smile:")
         else:
             rbs=1
 
         if(list(d['systolic'])[0]>=110 and list(d['systolic'])[0]<=120):
-            st.write("Systolic pressure ✅")
+            st.write("Systolic pressure :smile:")
         else:
             sys=1
 
         if(list(d['diastolic'])[0]>=60 and list(d['diastolic'])[0]<=80):
-            st.write("Diastolic pressure ✅")
+            st.write("Diastolic pressure :smile:")
         else:
             dias=1
 
         if(list(d['bmi'])[0]>=18.5 and list(d['bmi'])[0]<=24.9):
-            st.write("Body Mass Index ✅")
+            st.write("Body Mass Index :smile:")
         else:
             bmi=1
 
@@ -387,13 +387,13 @@ with col1:
         else:
             st.write("<b><u>Values that need to be concentrated on:",unsafe_allow_html=True)
             if(h==1):
-                st.write("🔴 Haemoglobin level")
+                st.write(":exclamation: Haemoglobin level")
             if(sys==1 or dias==1):
-                st.write("🔴 Blood Pressure")
+                st.write(":exclamation: Blood Pressure")
             if(rbs==1):
-                st.write("🔴 Random Blood Sugar")
+                st.write(":exclamation: Random Blood Sugar")
             if(bmi==1):
-                st.write("🔴 Body Mass Index")
+                st.write(":exclamation: Body Mass Index")
 
     elif patient_id in list(low["id"].unique()):
         st.write("This patient is Progressing: LOW RISK PATIENT")
