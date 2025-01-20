@@ -3,6 +3,8 @@
 
 This guide outlines the steps to set up the project for local development and provides information about the two applications included in this repository.
 
+`Note:` To Setup the DB locally you need to download the csv files from `csr_entire_project_hook/data`
+
 ---
 
 ## **1. Local Environment Setup**
@@ -49,9 +51,23 @@ This guide outlines the steps to set up the project for local development and pr
 ## **3. Database Management**
 
 1. Use a database management tool (e.g., [DBeaver](https://dbeaver.io/)) to manage your database effectively.
-2. Import the required data into the database using your chosen DB manager.
+(I am using DBeaver here)
+2. Create a new DB connection [Shift + Ctrl + N]
+3. Select MySQL
+![alt text](image-2.png)
+4. Make your DB configurations
+![alt text](image-1.png)
+5. Create your own Database ( here. `new_schema` ), right click on it and choose `Import Data`
 ![alt text](image.png)
 
+6. Choose `CSV`
+![alt text](image-3.png)
+
+7. Click Browse and files `finaliti.csv`,`new_table.csv`,`whatif_train.csv` one by one and click proceed to apply changes.
+![alt text](image-6.png)
+
+8. You can see files in the DB
+![alt text](image-7.png)
 ---
 
 ## **4. Configure Secrets**
