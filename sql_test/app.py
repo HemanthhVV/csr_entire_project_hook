@@ -1,15 +1,20 @@
 from flask import Flask, render_template, request, redirect, url_for , session
-import pymysql
+import pymysql,os
 # from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+HOST = os.environ.get('host')
+USER = os.environ.get('user')
+PWD = os.environ.get('password')
+DATABASE = os.environ.get('database')
+
 # MySQL configuration
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'vvh@sql@07',
-    'database': 'new_schema',
+    'host': HOST,
+    'user': USER,
+    'password': PWD,
+    'database': DATABASE,
 }
 
 # Function to establish a connection to MySQL
@@ -96,7 +101,7 @@ def addon():
         values_template = ', '.join(['%s'] * len(data))
 
         insert_query = f"INSERT INTO new_schema.additional_attributes ({columns}) VALUES ({values_template})"
-        
+
         # Execute the query
         cursor.execute(insert_query, tuple(data.values()))
 
