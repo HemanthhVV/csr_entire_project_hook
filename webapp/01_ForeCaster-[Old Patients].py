@@ -38,6 +38,7 @@ logger.addHandler(file_handler)
 
 #Setup-connection-mysql
 conn = st.connection("mysql",type="sql")
+# st.write(conn)
 # st.connection()
 #For ARIMA-Multivariate
 #picking the data from table
